@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <include layout="@layout/toolbar_back"/>
+
+
+  <LinearLayout
+    android:id="@+id/company_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="회사 소개"
+      android:textColor="@color/color_000000"
+      android:textSize="16dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="6dp"
+      android:text="애니멀고를 소개 합니다."
+      android:textColor="@color/color_999999"
+      android:textSize="14dp" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginTop="20dp"
+      android:background="#EAE8E5" />
+
+  </LinearLayout>
+
+
+  <LinearLayout
+    android:id="@+id/terms_of_use_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="이용약관"
+      android:textColor="@color/color_000000"
+      android:textSize="16dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="6dp"
+      android:text="애니멀고 이용약관 입니다."
+      android:textColor="@color/color_999999"
+      android:textSize="14dp" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginTop="20dp"
+      android:background="#EAE8E5" />
+
+  </LinearLayout>
+
+
+  <LinearLayout
+    android:id="@+id/privacy_policy_terms_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="개인정보 처리방침"
+      android:textColor="@color/color_000000"
+      android:textSize="16dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="6dp"
+      android:text="개인정보를 이렇게 관리합니다."
+      android:textColor="@color/color_999999"
+      android:textSize="14dp" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginTop="20dp"
+      android:background="#EAE8E5" />
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/location_information_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="위치정보 이용약관"
+      android:textColor="@color/color_000000"
+      android:textSize="16dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="6dp"
+      android:text="위치정보는 이렇게 쓰여 집니다."
+      android:textColor="@color/color_999999"
+      android:textSize="14dp" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginTop="20dp"
+      android:background="#EAE8E5" />
+
+  </LinearLayout>
+
+</LinearLayout>

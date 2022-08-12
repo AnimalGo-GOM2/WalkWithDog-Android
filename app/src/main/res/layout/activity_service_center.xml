@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <include layout="@layout/toolbar_back"/>
+
+  <LinearLayout
+    android:id="@+id/notice_button"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="공지사항"
+      android:layout_marginTop="20dp"
+      android:textColor="@color/color_000000"
+      android:textSize="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="애니멀고에서 알려드립니다."
+      android:layout_marginTop="6dp"
+      android:textColor="@color/color_999999"
+      android:textSize="14dp"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="#EAE8E5"
+      android:layout_marginTop="20dp"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/faq_button"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="자주 묻는 질문"
+      android:layout_marginTop="20dp"
+      android:textColor="@color/color_000000"
+      android:textSize="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="궁금할 땐 먼저 확인하세요."
+      android:layout_marginTop="6dp"
+      android:textColor="@color/color_999999"
+      android:textSize="14dp"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="#EAE8E5"
+      android:layout_marginTop="20dp"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/qna_button"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="1:1문의"
+      android:layout_marginTop="20dp"
+      android:textColor="@color/color_000000"
+      android:textSize="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="성심을 다하여 답변드리겠습니다."
+      android:layout_marginTop="6dp"
+      android:textColor="@color/color_999999"
+      android:textSize="14dp"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="#EAE8E5"
+      android:layout_marginTop="20dp"/>
+
+  </LinearLayout>
+
+</LinearLayout>

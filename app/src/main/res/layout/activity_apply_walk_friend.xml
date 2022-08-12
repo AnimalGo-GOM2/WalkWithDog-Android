@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <include layout="@layout/toolbar_walk_request_detail" />
+
+  <androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+      <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="510dp"
+        android:id="@+id/pet_view_pager"/>
+
+      <ProgressBar
+        android:id="@+id/campaign_progressbar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="108dp"
+        android:max="100"
+        android:progress="30"
+        android:progressDrawable="@drawable/progressbar_walk" />
+
+      <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        app:shape_roundRect_borderColor="#33333308"
+        app:shape_roundRect_borderWidth="1dp"
+        app:shape_roundRect_bottomLeftRadius="20dp"
+        app:shape_roundRect_bottomRightRadius="20dp"
+        app:shape_roundRect_topLeftRadius="20dp"
+        app:shape_roundRect_topRightRadius="20dp">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <com.github.florent37.shapeofview.shapes.RoundRectView
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            app:shape_roundRect_bottomLeftRadius="20dp"
+            app:shape_roundRect_bottomRightRadius="20dp"
+            app:shape_roundRect_topLeftRadius="20dp"
+            app:shape_roundRect_topRightRadius="20dp">
+            <androidx.appcompat.widget.AppCompatImageView
+              android:layout_width="84dp"
+              android:layout_height="84dp"
+              android:src="@drawable/alec_krum_iix_qqjkzae_unsplash"
+              android:scaleType="centerCrop"/>
+
+
+          </com.github.florent37.shapeofview.shapes.RoundRectView>
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+              android:id="@+id/friend_bottom_popup"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/head_btn_dot"
+              android:layout_gravity="right"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="김아인슈타인엄마"
+              android:textSize="14dp"
+              android:textStyle="bold"/>
+
+            <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="6dp"
+              android:orientation="horizontal">
+
+              <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="20대"
+                android:textColor="@color/color_999999"
+                android:textSize="12dp" />
+
+              <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="·"
+                android:textColor="@color/color_999999"
+                android:textSize="12dp" />
+
+              <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여성"
+                android:textColor="@color/color_999999"
+                android:textSize="12dp" />
+
+            </LinearLayout>
+          </LinearLayout>
+
+
+        </LinearLayout>
+      </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:text="산책일시"
+        android:textColor="@color/color_000000"
+        android:textSize="18dp" />
+
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:text="2021.10.22 14:37"
+        android:textColor="@color/color_000000" />
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginRight="20dp"
+        android:text="산책 출발지"
+        android:textColor="@color/color_000000"
+        android:textSize="18dp" />
+
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="20dp"
+        android:text="서울특별시 강남구삼 로 120길 36(삼성동)"
+        android:textColor="@color/color_000000"
+        android:textSize="14dp" />
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        android:background="@color/colorAccent">
+
+        <com.naver.maps.map.MapView
+          android:id="@+id/apply_map_view"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+
+      </RelativeLayout>
+
+      <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        app:shape_roundRect_bottomLeftRadius="10dp"
+        app:shape_roundRect_bottomRightRadius="10dp"
+        app:shape_roundRect_topLeftRadius="10dp"
+        app:shape_roundRect_topRightRadius="10dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/apply_friend_chat_button"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:background="#28E0AB"
+          android:gravity="center"
+          android:text="대화"
+          android:textColor="@color/color_ffffff"
+          android:textSize="16dp"
+          android:textStyle="bold" />
+
+      </com.github.florent37.shapeofview.shapes.RoundRectView>
+    </LinearLayout>
+  </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

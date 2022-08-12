@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/app_bar"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@color/colorPrimary"
+  app:elevation="0dp">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+      style="@style/ToolBarPrimary"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:titleTextAppearance="@style/ToolbarTitleText"></androidx.appcompat.widget.Toolbar>
+  </LinearLayout>
+
+
+</com.google.android.material.appbar.AppBarLayout>

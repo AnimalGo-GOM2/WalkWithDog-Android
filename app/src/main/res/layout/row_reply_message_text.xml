@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+
+  <com.github.florent37.shapeofview.shapes.RoundRectView
+    android:id="@+id/message_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/color_F9F9F9"
+    android:layout_marginLeft="24dp"
+    android:layout_marginBottom="30dp"
+    android:layout_marginTop="5dp"
+    app:shape_roundRect_bottomLeftRadius="15dp"
+    app:shape_roundRect_bottomRightRadius="15dp"
+    app:shape_roundRect_topLeftRadius="15dp"
+    app:shape_roundRect_topRightRadius="15dp">
+
+    <RelativeLayout
+      android:background="@color/color_F9F9F9"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/user_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="14dp"
+        android:background="@color/color_F9F9F9"
+        android:maxWidth="280dp"
+        android:text="오시는데 얼마나 걸리시나요?"
+        android:textColor="@color/color_000000" />
+
+    </RelativeLayout>
+
+
+  </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+  <androidx.appcompat.widget.AppCompatImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@id/message_view"
+    android:layout_marginLeft="20dp"
+    android:layout_marginBottom="3dp"
+    android:src="@drawable/i_tail1" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/time_text_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/message_view"
+    android:layout_marginLeft="4dp"
+    android:layout_toRightOf="@+id/message_view"
+    android:text="08:11"
+    android:textColor="@color/color_999999"
+    android:textSize="11dp" />
+
+
+</RelativeLayout>

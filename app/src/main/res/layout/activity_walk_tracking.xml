@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="horizontal">
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:layout_gravity="center_vertical"
+      app:shape_roundRect_bottomLeftRadius="15dp"
+      app:shape_roundRect_bottomRightRadius="15dp"
+      app:shape_roundRect_topLeftRadius="15dp"
+      app:shape_roundRect_topRightRadius="15dp">
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/user_image_view"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/alec_krum_iix_qqjkzae_unsplash" />
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/user_nickname_text_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:layout_marginLeft="8dp"
+      android:text="김코기캔따개"
+      android:textColor="@color/color_000000"
+      android:textSize="14dp"
+      android:textStyle="bold" />
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:orientation="horizontal">
+
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/user_age_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="4dp"
+        android:text="20대"
+        android:textColor="@color/color_999999"
+        android:textSize="12dp" />
+      <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="·"
+        android:textColor="@color/color_999999"
+        android:textSize="12dp" />
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/user_gender_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="남성"
+        android:textColor="@color/color_999999"
+        android:textSize="12dp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical">
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/tracking_dot_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/head_btn_dot" />
+
+    </RelativeLayout>
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/pet_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:layout_marginLeft="20dp"
+      android:text="보호자의 반려견"
+      android:textColor="@color/color_000000"
+      android:textSize="12dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:layout_marginLeft="3dp"
+      android:src="@drawable/arrow_down" />
+
+  </LinearLayout>
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.naver.maps.map.MapView
+      android:id="@+id/walk_tracking_map_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+
+
+    <LinearLayout
+      android:id="@+id/tracking_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:background="@color/color_ffffff"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/walk_start_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/notosansbold"
+          android:text="15시 32분"
+          android:textColor="@color/color_000000"
+          android:textSize="12dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="~"
+          android:textColor="@color/color_000000"
+          android:textSize="12dp"
+          android:layout_marginLeft="2dp"/>
+
+      </LinearLayout>
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/walk_time_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="32분"
+            android:textColor="@color/color_000000"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+          <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/walk_distant_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="8dp"
+            android:fontFamily="@font/notosansregular"
+            android:text="0.3km"
+            android:textColor="@color/color_999999"
+            android:textSize="16dp" />
+        </LinearLayout>
+
+
+
+        <com.github.florent37.shapeofview.shapes.RoundRectView
+          android:layout_width="107dp"
+          android:layout_height="30dp"
+          android:layout_alignParentRight="true"
+          android:layout_gravity="center"
+          app:shape_roundRect_bottomLeftRadius="13dp"
+          app:shape_roundRect_bottomRightRadius="13dp"
+          app:shape_roundRect_topLeftRadius="13dp"
+          app:shape_roundRect_topRightRadius="13dp">
+
+          <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/walk_dialy_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="산책일기 쓰기"
+            android:textColor="@color/color_ffffff"
+            android:textSize="12dp" />
+
+        </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+
+      </RelativeLayout>
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/walk_location_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="서울특별시 강남구 삼성로 120길 36 (삼성동)"
+        android:textSize="14dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/color_000000"/>
+
+    </LinearLayout>
+  </RelativeLayout>
+
+
+</LinearLayout>

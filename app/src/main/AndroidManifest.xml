@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  package="rocateer.animalgo">
+
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission android:name="android.permission.BLUETOOTH" />
+  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+  <application
+    android:name="rocateer.animalgo.RocateerApplication"
+    android:allowBackup="true"
+    android:icon="@drawable/_12x512"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme"
+    android:usesCleartextTraffic="true"
+    tools:ignore="LockedOrientationActivity"
+    tools:replace="android:allowBackup">
+
+    <activity
+      android:name=".activity.intro.IntroActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden"
+      android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+
+    <activity
+      android:name="rocateer.animalgo.activity.main.MainActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden"></activity>
+
+    <!-- 튜토리얼 -->
+    <activity
+      android:name="rocateer.animalgo.activity.intro.TutorialActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!-- 약관보기 -->
+    <activity
+      android:name="rocateer.animalgo.activity.intro.TermsViewActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!-- 회사 소개 -->
+    <activity
+      android:name="rocateer.animalgo.activity.seemore.CompanyInfoActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+
+    <!-- 회원가입 -->
+    <activity
+      android:name="rocateer.animalgo.activity.intro.SignupActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!-- 회원가입 완료 -->
+    <activity
+      android:name="rocateer.animalgo.activity.intro.WelcomeActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  로그인  -->
+    <activity
+      android:name="rocateer.animalgo.activity.intro.SigninActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  아이디 찾기  -->
+    <activity
+      android:name="rocateer.animalgo.activity.intro.FindIdActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  아이디 찾기 상세  -->
+    <activity
+      android:name="rocateer.animalgo.activity.intro.FindIdDetailActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  비밀번호 찾기  -->
+    <activity
+      android:name="rocateer.animalgo.activity.intro.FindPwActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  비밀번호 찾기 상세  -->
+    <activity
+      android:name="rocateer.animalgo.activity.intro.FindPwDetailActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  산책 쪽지  -->
+    <activity
+      android:name="rocateer.animalgo.activity.home.WalkNoteActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  받은 쪽지  -->
+    <activity
+      android:name="rocateer.animalgo.activity.home.ReceivedNoteActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  쪽지 보내기 검색 -->
+    <activity
+      android:name="rocateer.animalgo.activity.home.SendNoteSearchActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  쪽지 보내기 검색 결과  -->
+    <activity
+      android:name="rocateer.animalgo.activity.home.SendNoteActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  산책친구와 함께 산책 가이드  -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.WalkFriendGuideActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  쪽지 보내기  -->
+    <activity
+      android:name="rocateer.animalgo.activity.home.InPutNoteActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  보낸 쪽지 검색  -->
+    <activity
+      android:name="rocateer.animalgo.activity.home.NoteSearchActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  보낸 쪽지 상세보  -->
+    <activity
+      android:name="rocateer.animalgo.activity.home.SentInBoxDetailActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  나와 반려견만 산책  -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.WithPetActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  산책친구 찾기 -->
+    <activity
+      android:name="rocateer.animalgo.activity.home.WalkFriendRequestActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  산책 가이드  -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.WalkGuideActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  반려견 수정  -->
+    <activity
+      android:name="rocateer.animalgo.activity.mypet.EditMyPetActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  산책친구와 함께 첫화면  -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.FirstWalkFriendActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  지원한 산책친구 더 보기 -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.MoreRequestFriendActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  산책 일기  -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.WalkDialyActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  산책친구와 함께 산책 일기  -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.WithFriendDialyActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  산책친구와 산책  -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.WithFriendsActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  산책친구 등록  -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.AddWalkFriendActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  산책친구 등록  -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.WalkTrackingActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  내 위치 설정  -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.SettingMyLocationActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  날짜 등록  -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.SelectDateActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  장소 등록 -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.SelectLocationActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  상대반려견 조건 -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.SelectFriendPetActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  보호자 조건 -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.SelectFriendConditionActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+
+    <!--  차단하기  -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.BlockingActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  신고하기  -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.ReportingActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  필터  -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.WalkFilterActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  등록한 산책친구 요청  -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.WalkRequestActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+    <!--  견종 필터  -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.SearchPetActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  등록한 산책친구 요청 상세  -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.WalkFriendDetailActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  등록한 산책친구 요청 상세  -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.ApplyFriendActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  지원한 산책친구  -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.ApplyWalkFriendDetailActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  나와 반려견만 산책 트레킹  -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.WithPetTrackingActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  채팅  -->
+    <activity
+      android:name="rocateer.animalgo.activity.walk.WalkChatActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+
+    <!--  산책기록  -->
+    <activity
+      android:name="rocateer.animalgo.activity.history.WalkHistoryActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  산책친구와 함께 산책기록  -->
+    <activity
+      android:name="rocateer.animalgo.activity.history.HistoryWithFriendDetailActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  내 반려견 등 -->
+    <activity
+      android:name="rocateer.animalgo.activity.mypet.AddMyPetActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  내 반려견 등 -->
+    <activity
+      android:name="rocateer.animalgo.activity.seemore.SendFeedbackActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  새로운 기능이 필요해요 -->
+    <activity
+      android:name="rocateer.animalgo.activity.seemore.NewFunctionActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  개선이 필요해요 -->
+    <activity
+      android:name="rocateer.animalgo.activity.seemore.ImprovingActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  개선이 필요해요 -->
+    <activity
+      android:name="rocateer.animalgo.activity.seemore.MyProfileActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  서비스센터 -->
+    <activity
+      android:name="rocateer.animalgo.activity.seemore.ServiceCenterActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+    <!--  애니멀고 정보 -->
+    <activity
+      android:name="rocateer.animalgo.activity.seemore.AnimalgoInfoActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  차간 현황 -->
+    <activity
+      android:name="rocateer.animalgo.activity.seemore.BlockActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  계정관리 -->
+    <activity
+      android:name="rocateer.animalgo.activity.seemore.ChangePwActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+
+    <!--  공지사항  -->
+    <activity
+      android:name=".activity.commons.notice.NoticeListActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  FAQ  -->
+    <activity
+      android:name=".activity.commons.faq.FAQListActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  웹  -->
+    <activity
+      android:name="rocateer.animalgo.activity.commons.WebViewActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  이벤트  -->
+    <activity
+      android:name=".activity.commons.event.EventListActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  1:1문의  -->
+    <activity
+      android:name=".activity.commons.qna.QNAActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+    <!--  1:1문의 상세  -->
+    <activity
+      android:name=".activity.commons.qna.QNADetailActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+    <!--  1:1문의 상세  -->
+    <activity
+      android:name=".activity.commons.qna.AddQnaActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  설정  -->
+    <activity
+      android:name="rocateer.animalgo.activity.seemore.SettingActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!--  알림  -->
+    <activity
+      android:name=".activity.commons.alarm.AlarmActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+
+    <!-- 채팅 -->
+    <activity
+      android:name="rocateer.animalgo.activity.chat.ChatListActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <activity
+      android:name="rocateer.animalgo.activity.chat.ChatActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!-- 이미지 크롭-->
+    <activity
+      android:name="com.canhub.cropper.CropImageActivity"
+      android:theme="@style/Base.Theme.AppCompat" />
+
+    <!--  다음 주소 검색 -->
+    <activity
+      android:name=".activity.commons.address.AddressActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!-- 이용약관 보기 -->
+    <activity
+      android:name=".activity.commons.terms.TermsActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <activity
+      android:name=".activity.commons.AuthActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+
+    <activity
+      android:name=".activity.EmptyActivity"
+      android:configChanges="orientation|keyboardHidden"
+      android:screenOrientation="portrait"
+      android:windowSoftInputMode="stateHidden" />
+
+    <!-- 서비스 추가 -->
+    <service android:name="rocateer.animalgo.commons.RocateerFMService"
+      android:exported="false">
+      <intent-filter>
+        <action android:name="com.google.firebase.MESSAGING_EVENT" />
+      </intent-filter>
+    </service>
+
+
+    <!--  Location 서비스 추가  -->
+    <service
+      android:name=".commons.TrackingService"
+      android:enabled="true"
+      android:exported="true"
+      android:foregroundServiceType="location" />
+
+    <!--  네이버 지도  -->
+    <meta-data
+      android:name="com.naver.maps.map.CLIENT_ID"
+      android:value="qeqwv19ug3" />
+
+    <meta-data
+      android:name="firebase_performance_logcat_enabled"
+      android:value="false" />
+
+    <provider
+      android:name="androidx.core.content.FileProvider"
+      android:authorities="rocateer.animalgo.provider"
+      android:exported="false"
+      android:grantUriPermissions="true">
+
+
+      <meta-data
+        android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/file_path_public"></meta-data>
+    </provider>
+
+    <!--    <provider-->
+    <!--      android:name="androidx.core.content.FileProvider"-->
+    <!--      android:authorities="rocat.fileprovider"-->
+    <!--      android:exported="false"-->
+    <!--      android:grantUriPermissions="true">-->
+
+    <!--      <meta-data-->
+    <!--        android:name="android.support.FILE_PROVIDER_PATHS"-->
+    <!--        android:resource="@xml/file_path_public" />-->
+    <!--    </provider>-->
+
+  </application>
+
+</manifest>

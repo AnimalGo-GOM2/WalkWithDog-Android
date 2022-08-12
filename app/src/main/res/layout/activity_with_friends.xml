@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <include layout="@layout/toolbar_with_friends" />
+
+
+    <LinearLayout
+      android:id="@+id/setting_location_button"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dp"
+      android:visibility="gone"
+      android:layout_marginTop="30dp"
+      android:layout_marginRight="20dp"
+      android:orientation="horizontal">
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="12dp"
+        android:layout_height="17dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/i_pin2" />
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/location_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:fontFamily="@font/notosansbold"
+        android:text="디지털로 32가길 76-1"
+        android:textColor="@color/color_000000"
+        android:textSize="22dp" />
+
+    </LinearLayout>
+  <RelativeLayout
+    android:id="@+id/list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:layout_marginBottom="@dimen/dp_40">
+
+    <rocateer.animalgo.commons.TouchDetectableScrollView
+      android:id="@+id/more_scroll_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/with_friend_recycler_view"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="30dp"
+          android:layout_marginBottom="70dp" />
+
+      </LinearLayout>
+    </rocateer.animalgo.commons.TouchDetectableScrollView>
+
+
+
+
+      <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp">
+
+
+        <com.github.florent37.shapeofview.shapes.RoundRectView
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          app:shape_roundRect_bottomLeftRadius="10dp"
+          app:shape_roundRect_bottomRightRadius="@dimen/dp_10"
+          app:shape_roundRect_topLeftRadius="@dimen/dp_10"
+          app:shape_roundRect_topRightRadius="@dimen/dp_10">
+
+          <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/enroll_walk_friend_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:text="산책친구 요청 등록"
+            android:textColor="@color/color_ffffff"
+            android:textStyle="bold" />
+
+        </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+      </LinearLayout>
+  </RelativeLayout>
+
+  <LinearLayout
+    android:id="@+id/default_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="150dp"
+    android:layout_marginLeft="@dimen/dp_40"
+    android:layout_marginRight="@dimen/dp_40"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+      android:layout_width="match_parent"
+      android:layout_height="220dp"
+      android:src="@drawable/img_empty4" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="30dp"
+      android:fontFamily="@font/notosansbold"
+      android:text="산책친구를 찾고 싶은"
+      android:textColor="@color/color_000000"
+      android:textSize="18dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="3dp"
+      android:fontFamily="@font/notosansbold"
+      android:text="위치를 설정하여 주세요."
+      android:textColor="@color/color_000000"
+      android:textSize="18dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="3dp"
+      android:fontFamily="@font/notosansbold"
+      android:text="설정된 위치의 주변 글이 노출됩니다."
+      android:textColor="@color/color_000000"
+      android:textSize="18dp" />
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+      android:layout_width="140dp"
+      android:layout_height="40dp"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="30dp"
+      app:shape_roundRect_bottomLeftRadius="40dp"
+      app:shape_roundRect_bottomRightRadius="40dp"
+      app:shape_roundRect_topLeftRadius="40dp"
+      app:shape_roundRect_topRightRadius="40dp">
+
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/location_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="산책위치 설정"
+        android:fontFamily="@font/notosansbold"
+        android:textColor="@color/color_ffffff"
+        android:textSize="14dp" />
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+  </LinearLayout>
+
+</LinearLayout>

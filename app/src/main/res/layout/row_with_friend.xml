@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="horizontal">
+
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+      android:layout_width="84dp"
+      android:layout_height="84dp"
+      app:shape_roundRect_bottomLeftRadius="20dp"
+      app:shape_roundRect_bottomRightRadius="20dp"
+      app:shape_roundRect_topLeftRadius="20dp"
+      app:shape_roundRect_topRightRadius="20dp">
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/user_image_view"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:src="@drawable/alec_krum_iix_qqjkzae_unsplash"
+        android:scaleType="centerCrop"/>
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="15dp"
+      android:layout_gravity="center_vertical"
+      android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/user_nickname_text_view"
+          android:text="김코기캔따개"
+          android:textColor="@color/color_000000"
+          android:textSize="14dp"
+          android:textStyle="bold" />
+
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/user_age_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="20대"
+          android:textColor="@color/color_999999"
+          android:textSize="12dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="·"
+          android:textColor="@color/color_999999"
+          android:textSize="12dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/user_gender_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="여성"
+          android:textColor="@color/color_999999"
+          android:textSize="12dp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/walk_date_text_view"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="산책일시 : 2020. 01. 03 17:53"
+          android:textSize="12dp"
+          android:textColor="@color/color_000000" />
+      </LinearLayout>
+
+
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="horizontal">
+
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+      android:layout_width="32dp"
+      android:layout_height="32dp"
+
+      app:shape_roundRect_bottomLeftRadius="16dp"
+      app:shape_roundRect_bottomRightRadius="16dp"
+      app:shape_roundRect_topLeftRadius="16dp"
+      app:shape_roundRect_topRightRadius="16dp">
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="32dp"
+        android:layout_height="match_parent"
+        android:id="@+id/pet_image_view"
+        android:src="@drawable/alec_krum_iix_qqjkzae_unsplash"
+        android:scaleType="centerCrop"/>
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/pet_name_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="8dp"
+          android:text="김아인슈타인코기 외 1마리"
+          android:textColor="@color/color_000000"
+          android:textSize="14dp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/pet_category_name_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="리트리버"
+          android:textColor="@color/color_999999"
+          android:textSize="12dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="·"
+          android:textColor="@color/color_999999"
+          android:textSize="12dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/pet_gender_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:text="남아"
+          android:textColor="@color/color_999999"
+          android:textSize="12dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="·"
+          android:textColor="@color/color_999999"
+          android:textSize="12dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/pet_age_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:text="12"
+          android:textColor="@color/color_999999"
+          android:textSize="12dp" />
+
+      </LinearLayout>
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="13dp"
+    android:orientation="horizontal">
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:shape_roundRect_bottomLeftRadius="100dp"
+      app:shape_roundRect_topLeftRadius="100dp"
+      app:shape_roundRect_borderColor="@color/color_EAE8E5"
+      app:shape_roundRect_borderWidth="1dp"
+      app:shape_roundRect_topRightRadius="100dp"
+      app:shape_roundRect_bottomRightRadius="100dp">
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/character_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#활동적"
+        android:textColor="@color/color_000000"
+        android:textSize="12dp"
+        android:padding="8dp"
+        android:fontFamily="@font/notosansregular"/>
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:shape_roundRect_bottomLeftRadius="100dp"
+      app:shape_roundRect_topLeftRadius="100dp"
+      app:shape_roundRect_borderColor="@color/color_EAE8E5"
+      app:shape_roundRect_borderWidth="1dp"
+      android:layout_marginLeft="6dp"
+      app:shape_roundRect_topRightRadius="100dp"
+      app:shape_roundRect_bottomRightRadius="100dp">
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/neuter_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#중성화 안 했어요"
+        android:textColor="@color/color_000000"
+        android:textSize="12dp"
+        android:padding="8dp"
+        android:fontFamily="@font/notosansregular"/>
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:shape_roundRect_bottomLeftRadius="100dp"
+      app:shape_roundRect_topLeftRadius="100dp"
+      app:shape_roundRect_borderColor="@color/color_EAE8E5"
+      app:shape_roundRect_borderWidth="1dp"
+      android:layout_marginLeft="6dp"
+      app:shape_roundRect_topRightRadius="100dp"
+      app:shape_roundRect_bottomRightRadius="100dp">
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/train_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#훈련 안 했어요"
+        android:textColor="@color/color_000000"
+        android:textSize="12dp"
+        android:padding="8dp"
+        android:fontFamily="@font/notosansregular"/>
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+  </LinearLayout>
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="8dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:background="#EBF2F0" />
+
+
+</LinearLayout>

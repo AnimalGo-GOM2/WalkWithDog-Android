@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <include layout="@layout/toolbar_back"/>
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp">
+
+  <androidx.appcompat.widget.AppCompatEditText
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/search_edit_text"
+    android:background="@color/clear"
+    android:hint="쪽지를 받을 회원의 닉네임을 입력하세요."
+    android:textSize="14dp"
+    android:inputType="text"/>
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/head_btn_search" />
+
+    </RelativeLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#EAE8E5"/>
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="22dp"
+    android:textColor="@color/color_000000"
+    android:fontFamily="@font/notosansbold"
+    android:text="쪽지를 받을 회원을 검색 해주세요."
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="30dp"/>
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosansregular"
+        android:text="성별"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/color_000000"
+        android:textSize="14dp" />
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginRight="20dp"
+      android:orientation="horizontal">
+
+      <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/note_person_female_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        app:shape_roundRect_borderColor="@color/color_EAE8E5"
+        app:shape_roundRect_borderWidth="1dp"
+        app:shape_roundRect_bottomLeftRadius="@dimen/dp_10"
+        app:shape_roundRect_bottomRightRadius="@dimen/dp_10"
+        app:shape_roundRect_topLeftRadius="@dimen/dp_10"
+        app:shape_roundRect_topRightRadius="@dimen/dp_10">
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:layout_gravity="center"
+          android:background="@color/clear"
+          android:gravity="center"
+          android:text="여자"
+          android:textColor="@color/color_000000" />
+
+      </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+      <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/note_male_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        app:shape_roundRect_borderColor="@color/color_EAE8E5"
+        app:shape_roundRect_borderWidth="1dp"
+        app:shape_roundRect_bottomLeftRadius="@dimen/dp_10"
+        app:shape_roundRect_bottomRightRadius="@dimen/dp_10"
+        app:shape_roundRect_topLeftRadius="@dimen/dp_10"
+        app:shape_roundRect_topRightRadius="@dimen/dp_10">
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:layout_gravity="center"
+          android:background="@color/clear"
+          android:gravity="center"
+          android:text="남자"
+          android:textColor="@color/color_000000" />
+
+      </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+      <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/note_person_gender_no_problem"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        app:shape_roundRect_borderColor="@color/color_EAE8E5"
+        app:shape_roundRect_borderWidth="1dp"
+        app:shape_roundRect_bottomLeftRadius="@dimen/dp_10"
+        app:shape_roundRect_bottomRightRadius="@dimen/dp_10"
+        app:shape_roundRect_topLeftRadius="@dimen/dp_10"
+        app:shape_roundRect_topRightRadius="@dimen/dp_10">
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:layout_gravity="center"
+          android:background="@color/clear"
+          android:gravity="center"
+          android:text="상관없음"
+          android:textColor="@color/color_000000" />
+
+      </com.github.florent37.shapeofview.shapes.RoundRectView>
+    </LinearLayout>
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosansregular"
+        android:text="나이"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/color_000000"
+        android:textSize="14dp" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginRight="20dp"
+      android:orientation="horizontal">
+
+      <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/note_age_button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:shape_roundRect_borderColor="@color/color_EAE8E5"
+        app:shape_roundRect_borderWidth="1dp"
+        app:shape_roundRect_bottomLeftRadius="@dimen/dp_10"
+        app:shape_roundRect_bottomRightRadius="@dimen/dp_10"
+        app:shape_roundRect_topLeftRadius="@dimen/dp_10"
+        app:shape_roundRect_topRightRadius="@dimen/dp_10">
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:layout_gravity="center"
+          android:background="@color/clear"
+          android:gravity="center"
+          android:text="20대"
+          android:textColor="@color/color_000000" />
+      </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+      <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/note_age_button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_weight="1"
+        app:shape_roundRect_borderColor="@color/color_EAE8E5"
+        app:shape_roundRect_borderWidth="1dp"
+        app:shape_roundRect_bottomLeftRadius="@dimen/dp_10"
+        app:shape_roundRect_bottomRightRadius="@dimen/dp_10"
+        app:shape_roundRect_topLeftRadius="@dimen/dp_10"
+        app:shape_roundRect_topRightRadius="@dimen/dp_10">
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:layout_gravity="center"
+          android:background="@color/clear"
+          android:gravity="center"
+          android:text="30대"
+          android:textColor="@color/color_000000" />
+      </com.github.florent37.shapeofview.shapes.RoundRectView>
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginRight="20dp"
+      android:orientation="horizontal">
+
+      <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/note_age_button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:shape_roundRect_borderColor="@color/color_EAE8E5"
+        app:shape_roundRect_borderWidth="1dp"
+        app:shape_roundRect_bottomLeftRadius="@dimen/dp_10"
+        app:shape_roundRect_bottomRightRadius="@dimen/dp_10"
+        app:shape_roundRect_topLeftRadius="@dimen/dp_10"
+        app:shape_roundRect_topRightRadius="@dimen/dp_10">
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:layout_gravity="center"
+          android:background="@color/clear"
+          android:gravity="center"
+          android:text="40대"
+          android:textColor="@color/color_000000" />
+      </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+      <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/note_age_button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_weight="1"
+        app:shape_roundRect_borderColor="@color/color_EAE8E5"
+        app:shape_roundRect_borderWidth="1dp"
+        app:shape_roundRect_bottomLeftRadius="@dimen/dp_10"
+        app:shape_roundRect_bottomRightRadius="@dimen/dp_10"
+        app:shape_roundRect_topLeftRadius="@dimen/dp_10"
+        app:shape_roundRect_topRightRadius="@dimen/dp_10">
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:layout_gravity="center"
+          android:background="@color/clear"
+          android:gravity="center"
+          android:text="50대 이상"
+          android:textColor="@color/color_000000" />
+      </com.github.florent37.shapeofview.shapes.RoundRectView>
+    </LinearLayout>
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+      android:id="@+id/note_age_button5"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="@dimen/dp_10"
+      android:layout_marginRight="20dp"
+      app:shape_roundRect_borderColor="#EAE8E5"
+      app:shape_roundRect_borderWidth="1dp"
+      app:shape_roundRect_bottomLeftRadius="@dimen/dp_10"
+      app:shape_roundRect_bottomRightRadius="@dimen/dp_10"
+      app:shape_roundRect_topLeftRadius="@dimen/dp_10"
+      app:shape_roundRect_topRightRadius="@dimen/dp_10">
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@color/clear"
+        android:gravity="center"
+        android:text="상관없음"
+        android:textColor="@color/color_000000" />
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+  </LinearLayout>
+  <com.github.florent37.shapeofview.shapes.RoundRectView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="50dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:shape_roundRect_bottomLeftRadius="10dp"
+    app:shape_roundRect_bottomRightRadius="10dp"
+    app:shape_roundRect_topLeftRadius="10dp"
+    app:shape_roundRect_topRightRadius="10dp">
+
+    <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/user_search_button"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="#28E0AB"
+      android:gravity="center"
+      android:text="검색"
+      android:textColor="@color/color_ffffff"
+      android:textSize="16dp"
+      android:textStyle="bold" />
+
+  </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

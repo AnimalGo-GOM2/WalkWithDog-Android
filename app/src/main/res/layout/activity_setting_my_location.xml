@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <include layout="@layout/toolbar_back" />
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@id/setting_location_layout">
+
+
+      <com.naver.maps.map.MapView
+        android:id="@+id/setting_my_location_map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/select_location_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/i_location"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/move_my_location_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/btn_i_location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:background="@color/color_66000000"
+      android:gravity="center"
+      android:text="현재 위치를 설정하세요."
+      android:textColor="@color/color_ffffff"
+      android:textSize="14dp" />
+
+
+    <LinearLayout
+      android:id="@+id/setting_location_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:background="@color/color_ffffff"
+      android:orientation="vertical">
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/member_location_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="서울 특별시 금천구 가산디지털 1호 145길"
+        android:textColor="@color/color_000000"
+        android:textSize="16dp" />
+
+
+      <LinearLayout
+        android:id="@+id/walk_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+
+        <com.github.florent37.shapeofview.shapes.RoundRectView
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginBottom="30dp"
+          app:shape_roundRect_bottomLeftRadius="10dp"
+          app:shape_roundRect_bottomRightRadius="@dimen/dp_10"
+          app:shape_roundRect_topLeftRadius="@dimen/dp_10"
+          app:shape_roundRect_topRightRadius="@dimen/dp_10">
+
+          <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/location_complete_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:text="이 위치로 설정"
+            android:textColor="@color/color_ffffff"
+            android:textStyle="bold" />
+
+        </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+      </LinearLayout>
+    </LinearLayout>
+  </RelativeLayout>
+
+
+</LinearLayout>

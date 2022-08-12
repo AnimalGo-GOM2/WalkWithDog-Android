@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="80dp">
+
+  <com.github.florent37.shapeofview.shapes.RoundRectView
+    android:id="@+id/user_image_layout"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="20dp"
+    app:shape_roundRect_bottomLeftRadius="25dp"
+    app:shape_roundRect_bottomRightRadius="25dp"
+    app:shape_roundRect_topLeftRadius="25dp"
+    app:shape_roundRect_topRightRadius="25dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+      android:id="@+id/user_image_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scaleType="centerCrop"
+      android:src="@drawable/alec_krum_iix_qqjkzae_unsplash" />
+
+  </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/user_nickname_text_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="12dp"
+    android:layout_toRightOf="@id/user_image_layout"
+    android:fontFamily="@font/notosansbold"
+    android:text="ophennn"
+    android:textSize="14dp" />
+
+  <com.github.florent37.shapeofview.shapes.RoundRectView
+    android:id="@+id/follow_layout"
+    android:layout_width="86dp"
+    android:layout_height="32dp"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="20dp"
+    app:shape_roundRect_borderColor="@color/color_000000"
+    app:shape_roundRect_borderWidth="1dp"
+    app:shape_roundRect_bottomLeftRadius="5dp"
+    app:shape_roundRect_bottomRightRadius="5dp"
+    app:shape_roundRect_topLeftRadius="5dp"
+    app:shape_roundRect_topRightRadius="5dp">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/block_button"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/color_ffffff"
+      android:gravity="center"
+      android:text="차단해제"
+      android:textColor="@color/color_999999"
+      android:textSize="12dp" />
+
+
+  </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+</RelativeLayout>

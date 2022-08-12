@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--  메인 컬러  -->
+  <color name="colorPrimary">#FFFFFF</color>
+  <color name="colorPrimaryDark">#FFFFFF</color>
+  <color name="colorAccent">#28E0AB</color>
+  <color name="colorAccentDark">#00C79C</color>
+  <color name="colorAccentLight">#CBE496</color>
+  <color name="color_28E0AB0A">#0A28E0AB</color>
+  <color name="color_ffc314">#E7AD2B</color>#edb937
+
+
+  <!--  기본 컬러  -->
+  <color name="clear">#00000000</color>
+  <color name="color_000000">#000000</color>
+  <color name="color_30000000">#30000000</color>
+  <color name="color_60000000">#60000000</color>
+  <color name="color_66000000">#66000000</color>
+  <color name="color_90000000">#90000000</color>
+  <color name="color_333333">#333333</color>
+  <color name="color_282828">#282828</color>
+  <color name="color_666666">#666666</color>
+  <color name="color_999999">#999999</color>
+
+  <color name="color_ffffff">#FFFFFF</color>
+  <color name="color_f6f6f6">#F6F6F6</color>
+  <color name="color_f9f9f9">#F9F9F9</color>
+  <color name="color_dddddd">#DDDDDD</color>
+  <color name="color_F9F9F9">#F9F9F9</color>
+  <color name="color_CCCCCC">#CCCCCC</color>
+  <color name="color_EAE8E5">#EAE8E5</color>
+
+</resources>

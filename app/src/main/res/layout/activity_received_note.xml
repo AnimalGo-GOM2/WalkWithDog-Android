@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_walk_request_detail" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+
+        <com.github.florent37.shapeofview.shapes.RoundRectView
+          android:layout_width="44dp"
+          android:layout_height="44dp"
+          app:shape_roundRect_bottomLeftRadius="14dp"
+          app:shape_roundRect_bottomRightRadius="14dp"
+          app:shape_roundRect_topLeftRadius="14dp"
+          app:shape_roundRect_topRightRadius="14dp">
+
+          <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/memo_user_image_view"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/alec_krum_iix_qqjkzae_unsplash" />
+
+        </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:orientation="vertical">
+
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+              android:id="@+id/memo_user_name_text_view"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="15dp"
+              android:text="구르미아빠"
+              android:textColor="@color/color_000000"
+              android:textSize="14dp"
+              android:textStyle="bold" />
+
+            <RelativeLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+              <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/memo_user_date_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="14dp"
+                android:text="2021. 10. 26. 14:48"
+                android:textColor="@color/color_999999"
+                android:textSize="12dp" />
+            </RelativeLayout>
+
+          </LinearLayout>
+
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+              android:id="@+id/memo_user_age_text_view"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:text="20대"
+              android:textColor="@color/color_999999"
+              android:textSize="12dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="·"
+              android:textColor="@color/color_999999"
+              android:textSize="12dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+              android:id="@+id/memo_user_gender_text_view"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:text="여성"
+              android:textColor="@color/color_999999"
+              android:textSize="12dp" />
+
+          </LinearLayout>
+        </LinearLayout>
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginTop="20dp"
+      android:background="#EAE8E5" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/memo_user_contents_text_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="30dp"
+      android:layout_marginRight="20dp"
+      android:text="안녕하세요. 우리 구르미와 아이 나이가 비슷하네요.\n같이 산책하면 서로 좋은 단짝친구가 될 거 같아서 쪽지 보내봐요. 답장 부탁해요 :)"
+      android:textColor="@color/color_000000"
+      android:textSize="14dp" />
+
+
+  </LinearLayout>
+
+  <com.github.florent37.shapeofview.shapes.RoundRectView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="50dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:shape_roundRect_bottomLeftRadius="10dp"
+    app:shape_roundRect_bottomRightRadius="10dp"
+    app:shape_roundRect_topLeftRadius="10dp"
+    app:shape_roundRect_topRightRadius="10dp">
+
+    <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/input_note_button"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="#28E0AB"
+      android:gravity="center"
+      android:text="쪽지 보내기"
+      android:textColor="@color/color_ffffff"
+      android:textSize="16dp"
+      android:textStyle="bold" />
+
+  </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

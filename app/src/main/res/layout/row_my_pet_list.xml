@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:orientation="horizontal">
+
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+      android:layout_width="84dp"
+      android:layout_height="84dp"
+      android:layout_marginLeft="20dp"
+      app:shape_roundRect_bottomLeftRadius="42dp"
+      app:shape_roundRect_bottomRightRadius="42dp"
+      app:shape_roundRect_topLeftRadius="42dp"
+      app:shape_roundRect_topRightRadius="42dp">
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/my_pet_image_view"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/alec_krum_iix_qqjkzae_unsplash" />
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:orientation="horizontal">
+
+          <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/my_animal_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="강아지"
+            android:textColor="@color/color_000000"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+          <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" · "
+            android:textColor="@color/color_000000"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+          <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/animal_gender_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="여아"
+            android:textColor="@color/color_000000"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+          <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/my_pet_walk_cnt_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="12회"
+            android:textColor="@color/colorAccent"
+            android:textSize="14dp" />
+        </RelativeLayout>
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/animal_year_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:layout_marginTop="3dp"
+          android:text="2020. 01. 03 17:53"
+          android:textColor="@color/color_999999"
+          android:textSize="12dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="3dp"
+          android:text="("
+          android:textColor="@color/color_999999"
+          android:textSize="12dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/my_pet_age_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="3dp"
+          android:text="1살"
+          android:textColor="@color/color_999999"
+          android:textSize="12dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="3dp"
+          android:text=")"
+          android:textColor="@color/color_999999"
+          android:textSize="12dp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="견종"
+          android:textColor="@color/color_CCCCCC"
+          android:textSize="12dp" />
+
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/my_pet_second_category_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="웰시코기"
+            android:textColor="@color/color_000000"
+            android:textSize="12dp" />
+
+          <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/my_pet_category_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(대형견)"
+            android:textColor="@color/color_000000"
+            android:textSize="12dp" />
+
+        </LinearLayout>
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="중성화"
+          android:textColor="@color/color_CCCCCC"
+          android:textSize="12dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/my_pet_neuter_yn_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="5dp"
+          android:text="O"
+          android:textColor="@color/color_000000"
+          android:textSize="12dp" />
+      </LinearLayout>
+
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

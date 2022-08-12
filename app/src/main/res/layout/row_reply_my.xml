@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+  <com.github.florent37.shapeofview.shapes.RoundRectView
+    android:id="@+id/message_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="24dp"
+    android:layout_marginBottom="30dp"
+    app:shape_roundRect_bottomLeftRadius="15dp"
+    app:shape_roundRect_bottomRightRadius="15dp"
+    app:shape_roundRect_topLeftRadius="15dp"
+    app:shape_roundRect_topRightRadius="15dp">
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:background="@color/colorAccent"
+      android:layout_height="wrap_content">
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/my_contents_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:maxWidth="280dp"
+        android:text="출발 장소까지는 얼마 안 걸려요"
+        android:textColor="@color/color_ffffff"
+        android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+  </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+  <androidx.appcompat.widget.AppCompatImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@id/message_view"
+    android:layout_alignBottom="@id/message_view"
+    android:layout_marginRight="-4dp"
+    android:src="@drawable/i_tail2" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/message_time_text_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/message_view"
+    android:layout_marginRight="4dp"
+    android:layout_toLeftOf="@+id/message_view"
+    android:text="08:11"
+    android:textColor="@color/color_999999"
+    android:textSize="11dp" />
+
+</RelativeLayout>

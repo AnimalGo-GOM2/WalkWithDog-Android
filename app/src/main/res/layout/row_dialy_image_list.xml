@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <com.github.florent37.shapeofview.shapes.RoundRectView
+    android:layout_width="match_parent"
+    android:layout_height="335dp"
+    app:shape_roundRect_bottomLeftRadius="20dp"
+    app:shape_roundRect_bottomRightRadius="20dp"
+    app:shape_roundRect_topLeftRadius="20dp"
+    app:shape_roundRect_topRightRadius="20dp">
+
+  <androidx.appcompat.widget.AppCompatImageView
+    android:id="@+id/dialy_image_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/alec_krum_iix_qqjkzae_unsplash"
+    android:scaleType="centerCrop"/>
+
+  </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+</LinearLayout>

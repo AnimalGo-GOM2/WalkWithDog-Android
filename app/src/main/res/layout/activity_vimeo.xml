@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+<!--  <include layout="@layout/toolbar_back" />-->
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <WebView
+      android:id="@+id/vimeo_player_webview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/color_333333" />
+
+    <RelativeLayout
+      android:id="@+id/disable_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/color_30000000">
+
+      <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+
+        android:layout_margin="30dp"
+        android:layout_marginBottom="150dp"
+        android:background="@color/colorAccent"
+        android:text="플레이" />
+
+      <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/pause_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:background="@color/colorAccent"
+        android:text="일시정지" />
+
+    </RelativeLayout>
+
+  </RelativeLayout>
+
+
+</LinearLayout>

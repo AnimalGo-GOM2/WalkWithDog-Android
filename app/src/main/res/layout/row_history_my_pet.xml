@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+  <com.github.florent37.shapeofview.shapes.RoundRectView
+    android:layout_alignParentRight="true"
+    android:layout_width="68dp"
+    android:layout_height="68dp"
+    app:shape_roundRect_borderColor="@color/color_ffffff"
+    app:shape_roundRect_borderWidth="3dp"
+    app:shape_roundRect_bottomLeftRadius="34dp"
+    app:shape_roundRect_bottomRightRadius="34dp"
+    app:shape_roundRect_topLeftRadius="34dp"
+    app:shape_roundRect_topRightRadius="34dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+      android:id="@+id/history_my_pet_iamge_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scaleType="centerCrop"
+      android:src="@drawable/alec_krum_iix_qqjkzae_unsplash" />
+
+  </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+</LinearLayout>

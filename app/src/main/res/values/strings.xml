@@ -1,0 +1,173 @@
+<resources>
+
+  <string name="app_name">애니멀고 산책</string>
+
+  <string name="app_version">V</string>
+  <string name="version_unknown">V</string>
+
+  <string name="common_auth"><![CDATA[애니멀고는 앱이 열려있거나 닫혀있을 때 산책 위치 서비스를 제공하기 위하여 위치 데이터를 수집하여 "산책하기", "반려견과 산책하기", "내친구와 산책하기" 기능을 지원합니다."]]></string>
+  <string name="common_auth_denined"><![CDATA[[어플리케이션 > 애니멀고 산책 > 권한 설정] 에서 권한 설정을 다시 할 수 있습니다.]]></string>
+  <string name="common_ok">확인</string>
+  <string name="common_select">선택</string>
+  <string name="common_cancel">취소</string>
+  <string name="common_delete">삭제</string>
+  <string name="common_err_api_msg">통신상태를 확인해 주세요.</string>
+  <string name="common_choose">선택해주세요.</string>
+  <string name="common_camera">카메라</string>
+  <string name="common_gallery">갤러리</string>
+  <string name="common_camera_auth">사진을 업로드 하기 위해 권한이 필요합니다.</string>
+  <string name="common_camera_auth_more">사진을 업로드 하기 위해 권한이 필요합니다.</string>
+  <string name="common_back">\'뒤로가기\'버튼을 한번 더 누르시면 종료됩니다.</string>
+  <string name="facebook_auth_info">페이스북으로 가입 버튼을 누르시면,\n서비스 약관에 동의하는 것으로 간주됩니다.</string>
+  <string name="login"><b><u>로그인</u></b></string>
+  <string name="find_pw_info">가입하신 이메일 주소를 입력해주시면 \n비밀번호 재설정이 가능한 링크가 발송됩니다.</string>
+  <string name="qa">QA 타이틀</string>
+  <string name="regist_button">등록버튼</string>
+
+  <string-array name="pet_size">
+    <item>대형견</item>
+    <item>중형견</item>
+    <item>소형견</item>
+  </string-array>
+
+  <string-array name="pet_category">
+    <item>골든리트리버</item>
+    <item>시츄</item>
+    <item>닥스훈트</item>
+    <item>포메라니안</item>
+  </string-array>
+
+  <string-array name="pet_year">
+    <item>2000</item>
+    <item>2001</item>
+    <item>2002</item>
+    <item>2003</item>
+    <item>2004</item>
+    <item>2005</item>
+    <item>2006</item>
+    <item>2007</item>
+    <item>2008</item>
+    <item>2009</item>
+    <item>2010</item>
+    <item>2011</item>
+    <item>2012</item>
+    <item>2013</item>
+    <item>2014</item>
+    <item>2015</item>
+    <item>2016</item>
+    <item>2017</item>
+    <item>2018</item>
+    <item>2019</item>
+    <item>2020</item>
+    <item>2021</item>
+    <item>2022</item>
+  </string-array>
+
+  <string-array name="pet_month">
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+    <item>8</item>
+    <item>9</item>
+    <item>10</item>
+    <item>11</item>
+    <item>12</item>
+
+  </string-array>
+
+  <string-array name="tracking_push_text">
+    <item>산책 시에는 \"애니멀고 산책\"으로 추억을 계속 남겨주세요.</item>
+    <item>반려견과 사진도 남겨 좋은 추억을 만들어 보세요.</item>
+    <item>산책친구 완료 시 기록 잊지 말고 남겨주세요.</item>
+    <item>배변활동시 배변봉투로 뒤처리 꼭 잊지 마세요!</item>
+    <item>산책 후 발바닥을 깨끗이 닦아주세요!</item>
+    <item>잠깐의 휴식 시간을 가져 충분한 휴식을 취해주세요.</item>
+    <item>산책 시 주변 반려견과 인사해보는 건 어떨까요?</item>
+    <item>다음 산책 시에는 산책친구와 같이 해보세요!</item>
+    <item>산책 시 마실 물과 간식은 챙기셨나요?</item>
+    <item>기본적인 산책 에티켓을 지켜주세요.</item>
+  </string-array>
+
+  <string-array name="friend_tracking_push_text">
+    <item> 반려견들은 서로 잘 어울려서 놀고 있나요?</item>
+    <item>서로 사진도 남겨 좋은 추억을 만들어 보세요.</item>
+    <item>산책친구 완료 시 기록 잊지말고 남겨주세요.</item>
+    <item>다음 산책 약속도 잡아보세요.</item>
+    <item>산책 후 발바닥을 깨끗이 닦아주세요!</item>
+    <item>잠깐의 휴식시간을 가져보는 건 어떠신가요?</item>
+    <item>자주가는 산책코스도 서로 공유해보세요.</item>
+    <item>상대 견주분과 유익한 정보들을 나눠보세요.</item>
+    <item>우리 아이의 일상 사진첩을 서로 공유해보세요.</item>
+    <item>산책이 끝나고 서로 일상얘기도 나눠보세요.</item>
+  </string-array>
+
+
+
+  <string-array name="terms">
+    <item>이용약관</item>
+    <item>개인정보 처리방침</item>
+    <item>위치정보 이용약관</item>
+
+  </string-array>
+
+  <string-array name="qna_type">
+  <item>회원 서비스</item>
+  <item>산책 하기</item>
+  <item>산책 기록</item>
+  <item>앱 사용</item>
+  <item>기타</item>
+  </string-array>
+
+  <string-array name="reporting">
+    <item>부적절한 대화</item>
+    <item>불친절한 매너</item>
+    <item>기타(직접입력)</item>
+  </string-array>
+
+  <string-array name="blocking">
+    <item>부적절한 대화</item>
+    <item>불친절한 매너</item>
+    <item>기타(직접입력)</item>
+  </string-array>
+
+  <string-array name="hour">
+    <item>00시</item>
+    <item>01시</item>
+    <item>02시</item>
+    <item>03시</item>
+    <item>04시</item>
+    <item>05시</item>
+    <item>06시</item>
+    <item>07시</item>
+    <item>08시</item>
+    <item>09시</item>
+    <item>10시</item>
+    <item>11시</item>
+    <item>12시</item>
+    <item>13시</item>
+    <item>14시</item>
+    <item>15시</item>
+    <item>16시</item>
+    <item>17시</item>
+    <item>18시</item>
+    <item>19시</item>
+    <item>20시</item>
+    <item>21시</item>
+    <item>22시</item>
+    <item>23시</item>
+  </string-array>
+  <string-array name="minute">
+    <item>00분</item>
+    <item>10분</item>
+    <item>20분</item>
+    <item>30분</item>
+    <item>40분</item>
+    <item>50분</item>
+  </string-array>
+
+
+</resources>

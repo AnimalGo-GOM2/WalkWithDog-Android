@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical">
+  <include layout="@layout/toolbar_close"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="30dp"
+    android:orientation="horizontal">
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="분류"
+    android:textSize="14dp"
+    android:textColor="@color/color_000000"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="*"
+      android:layout_marginLeft="2dp"
+      android:textSize="14dp"
+      android:textColor="@color/colorAccent"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="11dp"
+    android:layout_marginLeft="20dp"
+    android:orientation="vertical">
+
+
+    <com.skydoves.powerspinner.PowerSpinnerView
+      android:id="@+id/qna_category_spinner"
+      android:layout_width="match_parent"
+      android:layout_height="51dp"
+      android:background="@color/color_ffffff"
+      android:gravity="center_vertical"
+      android:padding="15dp"
+      android:textColor="@color/color_000000"
+      android:textColorHint="@color/color_999999"
+      android:textSize="14dp"
+      app:spinner_arrow_gravity="end"
+      app:spinner_arrow_drawable="@drawable/arrow_down"
+      app:spinner_divider_color="@color/color_000000"
+      app:spinner_divider_show="true"
+      app:spinner_divider_size="0.4dp"
+      app:spinner_item_array="@array/qna_type"
+      app:spinner_popup_animation="dropdown"
+      app:spinner_popup_background="@color/color_ffffff"
+      app:spinner_popup_elevation="14dp" />
+
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="#EAE8E5" />
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="30dp"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="제목"
+      android:textSize="14dp"
+      android:textColor="@color/color_000000"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="*"
+      android:layout_marginLeft="2dp"
+      android:textSize="14dp"
+      android:textColor="@color/colorAccent"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="11dp"
+    android:layout_marginLeft="20dp"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+      android:id="@+id/qna_title_edit_text"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:textSize="14dp"
+      android:background="@color/clear" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="#EAE8E5" />
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="30dp"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="내용"
+      android:textSize="14dp"
+      android:textColor="@color/color_000000"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="*"
+      android:layout_marginLeft="2dp"
+      android:textSize="14dp"
+      android:textColor="@color/colorAccent"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="11dp"
+    android:layout_marginLeft="20dp"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+      android:id="@+id/qna_contents_edit_text"
+      android:layout_width="match_parent"
+      android:layout_height="263dp"
+      android:hint="문의 내용을 적어 주세요."
+      android:gravity="top"
+      android:paddingTop="16dp"
+      android:textSize="14dp"
+      android:background="@color/clear" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="#EAE8E5" />
+
+  </LinearLayout>
+
+  <com.github.florent37.shapeofview.shapes.RoundRectView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginLeft="28dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="28dp"
+    app:shape_roundRect_bottomLeftRadius="10dp"
+    app:shape_roundRect_bottomRightRadius="10dp"
+    app:shape_roundRect_topLeftRadius="10dp"
+    app:shape_roundRect_topRightRadius="10dp">
+
+    <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/add_qna_button"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="#28E0AB"
+      android:gravity="center"
+      android:text="문의하기"
+      android:textColor="@color/color_ffffff"
+      android:textSize="16dp"
+      android:textStyle="bold" />
+
+  </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+
+</LinearLayout>

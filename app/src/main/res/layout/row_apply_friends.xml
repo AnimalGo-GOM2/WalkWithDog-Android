@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal">
+
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+      android:layout_width="84dp"
+      android:layout_height="84dp"
+      android:layout_marginLeft="20dp"
+      app:shape_roundRect_bottomLeftRadius="42dp"
+      app:shape_roundRect_bottomRightRadius="42dp"
+      app:shape_roundRect_topLeftRadius="42dp"
+      app:shape_roundRect_topRightRadius="42dp">
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/support_pet_image_view"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/alec_krum_iix_qqjkzae_unsplash" />
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/support_pet_name_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+          android:text="여름이"
+          android:textColor="@color/color_000000"
+          android:textSize="14dp"
+          android:textStyle="bold" />
+
+        <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+          <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/new_chat_yn_image_view"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/i_new" />
+        </RelativeLayout>
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="출발시간"
+          android:textColor="@color/color_999999"
+          android:textSize="12dp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/walk_start_time_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="8dp"
+          android:text="17:55"
+          android:textColor="@color/color_000000"
+          android:textSize="12dp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:src="@drawable/i_pin1" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/addr_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="6dp"
+          android:text="삼성동 111-117"
+          android:textColor="@color/color_000000"
+          android:textSize="14dp" />
+
+      </LinearLayout>
+
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back" />
+
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+      <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/walk_button_layout">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+
+          <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/notosansbold"
+            android:text="함께 산책 할"
+            android:textColor="@color/color_000000"
+            android:textSize="22dp" />
+
+          <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/notosansbold"
+            android:text="반려견을 선택하여 주세요."
+            android:textColor="@color/color_000000"
+            android:textSize="22dp" />
+
+          <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/select_my_pet_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+      </androidx.core.widget.NestedScrollView>
+
+      <LinearLayout
+        android:id="@+id/walk_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp">
+
+        <com.github.florent37.shapeofview.shapes.RoundRectView
+          android:layout_width="75dp"
+          android:layout_height="50dp"
+          app:shape_roundRect_bottomLeftRadius="10dp"
+          app:shape_roundRect_bottomRightRadius="@dimen/dp_10"
+          app:shape_roundRect_topLeftRadius="@dimen/dp_10"
+          app:shape_roundRect_topRightRadius="@dimen/dp_10">
+
+          <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/walk_cancle_button"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:background="#CCCCCC"
+            android:text="취소"
+            android:textColor="@color/color_ffffff"
+            android:textStyle="bold" />
+
+        </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+        <com.github.florent37.shapeofview.shapes.RoundRectView
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_marginLeft="@dimen/dp_10"
+          app:shape_roundRect_bottomLeftRadius="10dp"
+          app:shape_roundRect_bottomRightRadius="@dimen/dp_10"
+          app:shape_roundRect_topLeftRadius="@dimen/dp_10"
+          app:shape_roundRect_topRightRadius="@dimen/dp_10">
+
+          <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_next_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:text="다음"
+            android:textColor="@color/color_ffffff"
+            android:textStyle="bold" />
+
+        </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+      </LinearLayout>
+
+    </RelativeLayout>
+  </LinearLayout>
+
+</LinearLayout>

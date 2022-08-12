@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <androidx.core.widget.NestedScrollView
+    android:id="@+id/scroll_view"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:id="@+id/empty_walk_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+              android:layout_width="match_parent"
+              android:layout_height="235dp"
+              android:scaleType="centerCrop"
+              android:src="@drawable/bg" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="80dp"
+              android:text="산책하기"
+              android:textColor="@color/color_000000"
+              android:textSize="26dp"
+              android:fontFamily="@font/notosansbold" />
+
+
+            <com.github.florent37.shapeofview.shapes.RoundRectView
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="160dp"
+              android:layout_marginRight="20dp"
+              app:shape_roundRect_bottomLeftRadius="10dp"
+              app:shape_roundRect_bottomRightRadius="10dp"
+              app:shape_roundRect_topLeftRadius="10dp"
+              app:shape_roundRect_topRightRadius="10dp">
+
+
+              <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/color_ffffff"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_vertical">
+
+
+                  <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/with_pet_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:padding="5dp"
+                    android:fontFamily="@font/notosansbold"
+                    android:text="나와 반려견만 산책"
+                    android:textColor="@color/color_000000"
+                    android:textSize="14dp" />
+
+                  <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#CCCCCC" />
+
+                  <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                      android:id="@+id/with_friend_button"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentRight="true"
+                      android:fontFamily="@font/notosansbold"
+                      android:layout_marginRight="28dp"
+                      android:padding="5dp"
+                      android:text="산책친구와 함께"
+                      android:textColor="@color/color_000000"
+                      android:textSize="14dp" />
+                  </RelativeLayout>
+                </LinearLayout>
+              </LinearLayout>
+
+
+            </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+          </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+          android:id="@+id/walk_request_list_button"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="30dp"
+          android:layout_marginRight="20dp"
+          android:orientation="horizontal">
+
+          <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosansregular"
+            android:text="등록한 산책친구 요청"
+            app:fontFamily="@font/notosansregular"
+            android:textColor="@color/color_000000"
+            android:textSize="18dp" />
+
+          <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_marginTop="8dp"
+              android:layout_marginRight="0dp"
+              android:src="@drawable/arrow_right" />
+
+          </RelativeLayout>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/add_friends_request_recycler_view"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:visibility="gone" />
+
+        <LinearLayout
+          android:id="@+id/add_walk_friend_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="70dp"
+          android:layout_marginRight="20dp"
+          android:orientation="vertical"
+          android:visibility="visible">
+
+          <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/request_list_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="등록한 산책친구 찾기가 없어요."
+            android:textColor="@color/color_999999"
+            android:textSize="14dp" />
+
+          <com.github.florent37.shapeofview.shapes.RoundRectView
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorAccent"
+            app:shape_roundRect_bottomLeftRadius="100dp"
+            app:shape_roundRect_bottomRightRadius="100dp"
+            app:shape_roundRect_topLeftRadius="100dp"
+            app:shape_roundRect_topRightRadius="100dp">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+              android:id="@+id/add_walk_friend_button"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorAccent"
+              android:gravity="center"
+              android:text="산책친구 등록"
+              android:textColor="@color/color_ffffff"
+              android:textSize="14dp"
+              android:textStyle="bold" />
+
+          </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+          android:id="@+id/apply_friend_list_button"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="30dp"
+          android:layout_marginRight="20dp"
+          android:orientation="horizontal">
+
+          <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosansregular"
+            android:text="지원한 산책친구"
+            android:textColor="@color/color_000000"
+            android:textSize="18dp" />
+
+          <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+              android:layout_width="@dimen/dp_10"
+              android:layout_height="@dimen/dp_10"
+              android:layout_alignParentRight="true"
+              android:layout_marginTop="8dp"
+              android:src="@drawable/arrow_right" />
+
+          </RelativeLayout>
+
+        </LinearLayout>
+
+          <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/apply_friends_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+          android:id="@+id/apply_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="70dp"
+          android:layout_marginBottom="30dp"
+          android:layout_marginRight="20dp"
+          android:orientation="vertical"
+          android:visibility="visible">
+
+          <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/apply_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="산책친구 요청을 하셔서 함께 산책 해보세요."
+            android:textColor="@color/color_999999"
+            android:textSize="14dp" />
+
+          <com.github.florent37.shapeofview.shapes.RoundRectView
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorAccent"
+            app:shape_roundRect_bottomLeftRadius="100dp"
+            app:shape_roundRect_bottomRightRadius="100dp"
+            app:shape_roundRect_topLeftRadius="100dp"
+            app:shape_roundRect_topRightRadius="100dp">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+              android:id="@+id/request_walk_friend_button"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorAccent"
+              android:gravity="center"
+              android:text="산책친구 지원"
+              android:textColor="@color/color_ffffff"
+              android:textSize="14dp"
+              android:textStyle="bold" />
+
+          </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+        </LinearLayout>
+      </LinearLayout>
+
+
+    </LinearLayout>
+
+  </androidx.core.widget.NestedScrollView>
+
+  <LinearLayout
+    android:id="@+id/empty_my_pet"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+      android:layout_width="240dp"
+      android:layout_height="210dp"
+      android:layout_gravity="center_horizontal"
+      android:src="@drawable/img_empty1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="30dp"
+      android:fontFamily="@font/notosansbold"
+      android:text="산책을 시작하기 전에"
+      android:textColor="@color/color_000000"
+      android:textSize="18dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="3dp"
+      android:fontFamily="@font/notosansbold"
+      android:text="반려견을 먼저 등록 해주세요."
+      android:textColor="@color/color_000000"
+      android:textSize="18dp" />
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+      android:layout_width="140dp"
+      android:layout_height="40dp"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="30dp"
+      android:background="@color/colorAccent"
+      app:shape_roundRect_bottomLeftRadius="100dp"
+      app:shape_roundRect_bottomRightRadius="100dp"
+      app:shape_roundRect_topLeftRadius="100dp"
+      app:shape_roundRect_topRightRadius="100dp">
+
+      <LinearLayout
+        android:id="@+id/add_pet_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/btn_plus" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="6dp"
+          android:text="반려견 등록"
+          android:textColor="@color/color_ffffff"
+          android:textSize="14dp"
+          android:textStyle="bold" />
+      </LinearLayout>
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+  </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <com.github.florent37.shapeofview.shapes.RoundRectView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:shape_roundRect_topLeftRadius="100dp"
+    app:shape_roundRect_borderWidth="1dp"
+    app:shape_roundRect_bottomRightRadius="100dp"
+    app:shape_roundRect_bottomLeftRadius="100dp"
+    app:shape_roundRect_topRightRadius="100dp"
+    app:shape_roundRect_borderColor="@color/color_EAE8E5">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:paddingTop="6dp"
+      android:paddingBottom="6dp"
+      android:paddingRight="8dp"
+      android:paddingLeft="8dp"
+      android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/pet_filter_text_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="견종"
+      android:textSize="12dp"
+      android:gravity="center"
+      android:textColor="@color/color_000000"
+      android:fontFamily="@font/notosansregular"/>
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_delete_filter"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="4dp"/>
+
+    </LinearLayout>
+
+
+  </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+</LinearLayout>

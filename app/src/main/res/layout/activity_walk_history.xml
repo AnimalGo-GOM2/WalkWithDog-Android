@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <include layout="@layout/toolbar_back" />
+
+  <androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/color_000000"
+        app:fontFamily="@font/notosansmedium"
+        android:text="산책일시"
+        android:textSize="18dp" />
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/with_pet_walk_date_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_000000"
+        app:fontFamily="@font/notosansregular"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="20dp"
+        android:text="2021.10.26 18:02"
+        android:textSize="14dp" />
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        app:fontFamily="@font/notosansmedium"
+        android:textColor="@color/color_000000"
+        android:layout_marginRight="20dp"
+        android:text="산책 출발지"
+        android:textSize="18dp" />
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/walk_start_addr_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fontFamily="@font/notosansregular"
+        android:textColor="@color/color_000000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="20dp"
+        android:text="서울특별시 강남구청로 120길 36(삼성동)"
+        android:textSize="14dp" />
+
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1">
+
+          <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/total_distance_text_view"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:text="총 거리 18.4km"
+            android:layout_marginLeft="17dp"
+            android:textColor="@color/color_000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+          android:layout_width="1dp"
+          android:layout_height="10dp"
+          android:layout_gravity="center"
+          android:background="@color/color_CCCCCC" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/total_time_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:text="총 시간 60분"
+          android:layout_marginLeft="58dp"
+          android:textColor="@color/color_000000"
+          android:textSize="16dp"
+          android:textStyle="bold" />
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorAccent"
+        android:layout_margin="20dp">
+
+        <com.naver.maps.map.MapView
+          android:id="@+id/history_map_view"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+      </RelativeLayout>
+
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        app:fontFamily="@font/notosansmedium"
+        android:text="함께 한 반려견"
+        android:textColor="@color/color_000000"
+        android:textSize="18dp" />
+
+      <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/with_pet_list_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp" />
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        app:fontFamily="@font/notosansmedium"
+        android:text="산책 일기"
+        android:textColor="@color/color_000000"
+        android:textSize="18dp" />
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/memo_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="20dp"
+        app:fontFamily="@font/notosansregular"
+        android:text="우리 구르미와 김코기캔따개님의 김아인슈타인이 잘 어울려 놀아서 다행이에요. 너무 즐거운 산책이에요."
+        android:textColor="@color/color_000000"
+        android:textSize="14dp" />
+
+      <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dialy_image_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp" />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="14dp"
+        android:visibility="gone"
+        android:id="@+id/empty_photo">
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="등록된 산책일기가 없습니다."
+          android:textSize="14dp"
+          android:textColor="@color/color_999999"/>
+
+        <com.github.florent37.shapeofview.shapes.RoundRectView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          app:shape_roundRect_borderColor="#33333308"
+          app:shape_roundRect_borderWidth="1dp"
+          app:shape_roundRect_bottomLeftRadius="20dp"
+          app:shape_roundRect_bottomRightRadius="20dp"
+          app:shape_roundRect_topLeftRadius="20dp"
+          app:shape_roundRect_topRightRadius="20dp">
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/empty_photo"
+              android:layout_gravity="center_horizontal"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="등록된 사진이 없습니다."
+              android:textSize="14dp"
+              android:layout_marginTop="14dp"
+              android:layout_gravity="center_horizontal"
+              android:textColor="@color/color_999999"/>
+
+
+
+          </LinearLayout>
+        </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+      </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+  </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

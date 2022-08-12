@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+    android:id="@+id/history_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <com.google.android.material.tabs.TabLayout
+    android:id="@+id/history_tab_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/colorPrimary"
+    app:tabIndicatorColor="@color/colorAccent"
+    app:tabIndicatorFullWidth="false"
+    app:tabIndicatorHeight="2dp"
+    app:tabMinWidth="100dp"
+    app:tabSelectedTextColor="@color/color_000000"
+    app:tabTextAppearance="@style/HistoryTabLayout"
+    app:tabTextColor="@color/color_CCCCCC">
+
+    <com.google.android.material.tabs.TabItem
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:text="나와 반려견만" />
+
+    <com.google.android.material.tabs.TabItem
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:text="산책친구와 함께" />
+
+
+  </com.google.android.material.tabs.TabLayout>
+
+  <rocateer.animalgo.commons.SwipeViewPager
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/history_view_pager"/>
+  </LinearLayout>
+
+
+
+</LinearLayout>

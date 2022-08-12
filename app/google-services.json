@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "129692259817",
+    "project_id": "animalgo-d7c17",
+    "storage_bucket": "animalgo-d7c17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129692259817:android:aadbe4eecd51c09bf6e778",
+        "android_client_info": {
+          "package_name": "rocateer.animalgo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129692259817-q3hv0a7es12eocr5op3u5pqfp7e5herb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "rocateer.animalgo",
+            "certificate_hash": "7598b59b2f1c777beb9a99dfbb0696f4ea82b403"
+          }
+        },
+        {
+          "client_id": "129692259817-9d7ibmo1b0ohbnuos3g7tes41v71jbk9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0hsF5WDYC_SDVOjPj_1JPKzfxnCyXr0k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129692259817-9d7ibmo1b0ohbnuos3g7tes41v71jbk9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "129692259817-mdc9f7v66so286poqdc6r06c6coj8frr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.rocateer.animalgo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical">
+
+
+  <androidx.appcompat.widget.AppCompatImageView
+    android:layout_width="300dp"
+    android:layout_gravity="center"
+    android:layout_height="300dp"
+    android:layout_marginTop="190dp"
+    android:src="@drawable/img_success" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:text="회원가입 완료"
+    android:layout_gravity="center"
+    android:textColor="@color/color_000000"
+    android:textSize="22dp"
+    android:textStyle="bold" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:text="축하합니다! 회원가입이 완료되었습니다."
+    android:layout_gravity="center"
+    android:textColor="@color/color_000000"
+    android:textSize="14dp" />
+
+  <com.github.florent37.shapeofview.shapes.RoundRectView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="60dp"
+    android:layout_marginRight="20dp"
+    app:shape_roundRect_bottomLeftRadius="10dp"
+    app:shape_roundRect_bottomRightRadius="10dp"
+    app:shape_roundRect_topLeftRadius="10dp"
+    app:shape_roundRect_topRightRadius="10dp">
+
+    <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/signup_button"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="#28E0AB"
+      android:gravity="center"
+      android:text="로그인"
+      android:textColor="@color/color_ffffff"
+      android:textSize="16dp"
+      android:textStyle="bold" />
+
+  </com.github.florent37.shapeofview.shapes.RoundRectView>
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical">
+
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@+id/add_my_pet_button">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/my_pet_list_recycler_view"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:visibility="gone" />
+
+        <LinearLayout
+          android:id="@+id/empty_my_pet"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="150dp"
+          android:orientation="vertical"
+          android:visibility="visible">
+
+
+          <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/my_pet_button"
+            android:layout_width="240dp"
+            android:layout_height="210dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/img_empty3" />
+
+          <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/notosansbold"
+            android:text="반려견과의 즐거운 시간을"
+            android:textColor="@color/color_000000"
+            android:textSize="18dp" />
+
+          <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/notosansbold"
+            android:text="남기기 위해서"
+            android:textColor="@color/color_000000"
+            android:textSize="18dp" />
+
+          <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/notosansbold"
+            android:text="먼저 반려견 정보를 등록 해주세요."
+            android:textColor="@color/color_000000"
+            android:textSize="18dp" />
+
+          <com.github.florent37.shapeofview.shapes.RoundRectView
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorAccent"
+            app:shape_roundRect_bottomLeftRadius="100dp"
+            app:shape_roundRect_bottomRightRadius="100dp"
+            app:shape_roundRect_topLeftRadius="100dp"
+            app:shape_roundRect_topRightRadius="100dp">
+
+            <LinearLayout
+              android:id="@+id/add_my_pet_layout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorAccent"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+              <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_plus" />
+
+              <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="반려견 등록"
+                android:textColor="@color/color_ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+            </LinearLayout>
+          </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/add_my_pet_button"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:visibility="gone"
+      android:layout_alignParentBottom="true"
+      android:background="@color/colorAccent"
+      android:text="등록하기"
+      android:textColor="@color/color_ffffff"
+      android:textSize="14dp" />
+
+  </RelativeLayout>
+
+
+</LinearLayout>

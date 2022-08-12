@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <androidx.appcompat.widget.AppCompatImageView
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginLeft="53dp"
+    android:layout_marginTop="219dp"
+    android:layout_marginRight="53dp"
+    android:src="@drawable/logo_splash" />
+
+  <androidx.appcompat.widget.AppCompatEditText
+    android:id="@+id/email_edit_text"
+    android:layout_width="match_parent"
+    android:textSize="16dp"
+    android:layout_height="50dp"
+    android:layout_marginLeft="38dp"
+    android:textColorHint="#CCCCCC"
+    android:paddingBottom="15dp"
+    android:layout_marginTop="61dp"
+    android:layout_marginRight="38dp"
+    android:inputType="textEmailAddress"
+    android:background="@color/clear"
+    android:hint="이메일"
+    android:paddingLeft="20dp"
+    android:paddingTop="15dp" />
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginLeft="38dp"
+    android:layout_marginRight="38dp"
+    android:background="#EAE8E5" />
+
+  <androidx.appcompat.widget.AppCompatEditText
+    android:id="@+id/pw_edit_text"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginLeft="38dp"
+    android:inputType="textPassword"
+    android:textColorHint="#CCCCCC"
+    android:layout_marginTop="14dp"
+    android:textSize="16dp"
+    android:paddingBottom="15dp"
+    android:layout_marginRight="38dp"
+    android:background="@color/clear"
+    android:hint="비밀번호"
+    android:paddingLeft="20dp"
+    android:paddingTop="15dp" />
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginLeft="38dp"
+    android:layout_marginRight="38dp"
+    android:background="#EAE8E5" />
+
+  <com.github.florent37.shapeofview.shapes.RoundRectView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginLeft="38dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="38dp"
+    app:shape_roundRect_bottomLeftRadius="10dp"
+    app:shape_roundRect_bottomRightRadius="10dp"
+    app:shape_roundRect_topLeftRadius="10dp"
+    app:shape_roundRect_topRightRadius="10dp">
+
+    <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/login_button"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="#28E0AB"
+      android:gravity="center"
+      android:text="로그인"
+      android:textColor="@color/color_ffffff"
+      android:textSize="16dp"
+      android:textStyle="bold" />
+
+  </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:layout_marginLeft="38dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="38dp"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/find_id_button"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:text="아이디 찾기"
+      android:textColor="@color/color_000000"
+      android:textSize="12dp" />
+
+    <View
+      android:layout_width="1dp"
+      android:layout_height="9dp"
+      android:layout_gravity="center_vertical"
+      android:layout_marginLeft="8dp"
+      android:layout_marginRight="8dp"
+      android:background="#CCCCCC" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/find_pw_button"
+      android:text="비밀번호 찾기"
+      android:textColor="@color/color_000000"
+      android:textSize="12dp" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="38dp"
+    android:gravity="center"
+    android:layout_marginTop="100dp"
+    android:layout_marginRight="38dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="아직 애니멀고 산책의 회원이 아니신가요?"
+      android:textColor="@color/color_000000"
+      android:textSize="12dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/signup_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="5dp"
+      android:text="회원가입"
+      android:textColor="#28E0AB"
+      android:textSize="12dp" />
+
+
+  </LinearLayout>
+
+
+</LinearLayout>

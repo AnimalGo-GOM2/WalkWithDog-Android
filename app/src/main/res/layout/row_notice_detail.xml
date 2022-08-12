@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/notice_detail_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/spacing_mlarge"
+    android:layout_marginTop="@dimen/spacing_mlarge"
+    android:layout_marginEnd="@dimen/spacing_mlarge"
+    android:layout_marginBottom="@dimen/spacing_mlarge"
+    android:lineSpacingExtra="5dp"
+    android:text="내용"
+    android:textColor="@color/color_000000"
+    android:textSize="14dp" />
+
+  <androidx.appcompat.widget.AppCompatImageView
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="20dp"
+    android:id="@+id/notice_image"/>
+
+
+</LinearLayout>

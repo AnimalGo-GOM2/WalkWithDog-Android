@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/send_note_button"
+    android:orientation="vertical">
+
+
+
+  <include layout="@layout/toolbar_walk_note"/>
+
+  <com.google.android.material.tabs.TabLayout
+    android:id="@+id/walk_note_tab_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/colorPrimary"
+    app:tabIndicatorColor="@color/colorAccent"
+    app:tabIndicatorFullWidth="false"
+    app:tabIndicatorHeight="2dp"
+    app:tabMinWidth="100dp"
+    app:tabSelectedTextColor="@color/color_000000"
+    app:tabTextAppearance="@style/HistoryTabLayout"
+    app:tabTextColor="@color/color_CCCCCC">
+
+    <com.google.android.material.tabs.TabItem
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:text="받은 쪽지함" />
+
+    <com.google.android.material.tabs.TabItem
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:text="보낸 쪽지함" />
+
+
+  </com.google.android.material.tabs.TabLayout>
+
+  <rocateer.animalgo.commons.SwipeViewPager
+    android:id="@+id/walk_note_view_pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+  </LinearLayout>
+
+  <androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/send_note_button"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/colorAccent"
+    android:text="보내기"
+    android:textColor="@color/color_ffffff"
+    android:textSize="14dp" />
+
+
+
+</RelativeLayout>

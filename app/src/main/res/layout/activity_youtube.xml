@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <include layout="@layout/toolbar_back" />
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+
+    <WebView
+      android:id="@+id/youtube_player_webview"
+      android:layout_width="match_parent"
+      android:layout_height="300dp"
+      android:background="@color/color_333333" />
+
+<!--        <RelativeLayout-->
+<!--          android:id="@+id/disable_view"-->
+<!--          android:layout_width="match_parent"-->
+<!--          android:layout_height="match_parent" />-->
+
+  </RelativeLayout>
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+
+
+  <androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/play_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@color/color_dddddd"
+    android:text="play" />
+
+  <androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/stop_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@color/color_dddddd"
+    android:text="STOP" />
+
+  <androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/pause_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@color/color_dddddd"
+    android:text="PAUSE" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/player_text_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp" />
+
+
+</LinearLayout>

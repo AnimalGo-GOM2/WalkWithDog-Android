@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="20dp">
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/history_record_distant_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="18.4km"
+          android:textColor="@color/color_000000"
+          android:textSize="14dp"
+          android:textStyle="bold" />
+
+        <LinearLayout
+          android:layout_width="1dp"
+          android:layout_height="@dimen/dp_10"
+          android:layout_gravity="center_vertical"
+          android:layout_marginLeft="9dp"
+          android:layout_marginRight="9dp"
+          android:background="@color/color_CCCCCC" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/history_record_hout_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="총 70분"
+          android:textColor="@color/color_000000"
+          android:textSize="14dp"
+          android:textStyle="bold" />
+
+      </LinearLayout>
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/record_start_date_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="2020. 01. 03 17:53"
+        android:textColor="@color/color_999999"
+        android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+      android:layout_width="68dp"
+      android:layout_height="68dp"
+      app:shape_roundRect_bottomLeftRadius="34dp"
+      app:shape_roundRect_bottomRightRadius="34dp"
+      app:shape_roundRect_topLeftRadius="34dp"
+      app:shape_roundRect_topRightRadius="34dp">
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/history_pet_image_view"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/alec_krum_iix_qqjkzae_unsplash" />
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@color/color_f9f9f9"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:layout_gravity="center_vertical"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/history_name_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:text="김코기캔따개"
+          android:textColor="@color/color_000000"
+          android:textSize="14dp"
+          android:textStyle="bold" />
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/history_age_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="20대"
+          android:textColor="@color/color_999999"
+          android:textSize="12dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="·"
+          android:textColor="@color/color_999999"
+          android:textSize="12dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/history_gender_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:text="여성"
+          android:textColor="@color/color_999999"
+          android:textSize="12dp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+
+        <com.github.florent37.shapeofview.shapes.RoundRectView
+          android:layout_width="32dp"
+          android:layout_height="32dp"
+          app:shape_roundRect_bottomLeftRadius="16dp"
+          app:shape_roundRect_bottomRightRadius="16dp"
+          app:shape_roundRect_topLeftRadius="16dp"
+          app:shape_roundRect_topRightRadius="16dp">
+
+          <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/history_animal_image_view"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/alec_krum_iix_qqjkzae_unsplash" />
+
+        </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:orientation="vertical">
+
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+              android:id="@+id/pet_name_text_view"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="8dp"
+              android:text="김아인슈타인코기"
+              android:textColor="@color/color_000000"
+              android:textSize="14dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+              android:id="@+id/pet_cnt_text_view"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text=" 외 1마리"
+              android:textColor="@color/color_000000"
+              android:textSize="14dp" />
+
+          </LinearLayout>
+
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+              android:id="@+id/pet_category_name_text_view"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="리트리버"
+              android:textColor="@color/color_999999"
+              android:textSize="12dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="·"
+              android:textColor="@color/color_999999"
+              android:textSize="12dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+              android:id="@+id/pet_gender_text_view"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:text="남아"
+              android:textColor="@color/color_999999"
+              android:textSize="12dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="·"
+              android:textColor="@color/color_999999"
+              android:textSize="12dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+              android:id="@+id/pet_age_text_view"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:text="12"
+              android:textColor="@color/color_999999"
+              android:textSize="12dp" />
+
+          </LinearLayout>
+        </LinearLayout>
+
+
+      </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+      android:layout_width="84dp"
+      android:layout_height="84dp"
+      app:shape_roundRect_bottomLeftRadius="20dp"
+      app:shape_roundRect_bottomRightRadius="20dp"
+      app:shape_roundRect_topLeftRadius="20dp"
+      app:shape_roundRect_topRightRadius="20dp">
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/member_image_view"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/alec_krum_iix_qqjkzae_unsplash" />
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+  </LinearLayout>
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="8dp"
+    android:background="#EBF2F0" />
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="92dp"
+  android:layout_height="92dp"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+  <com.github.florent37.shapeofview.shapes.RoundRectView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:shape_roundRect_bottomLeftRadius="10dp"
+    app:shape_roundRect_bottomRightRadius="10dp"
+    app:shape_roundRect_topLeftRadius="10dp"
+    app:shape_roundRect_topRightRadius="10dp"
+    app:shape_roundRect_borderColor="@color/color_dddddd">
+
+  <androidx.appcompat.widget.AppCompatImageView
+    android:id="@+id/walk_dialy_image_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+  </com.github.florent37.shapeofview.shapes.RoundRectView>
+  <androidx.appcompat.widget.AppCompatImageView
+    android:id="@+id/delete_image_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/btn_delete"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_margin="6dp"/>
+  <com.github.florent37.shapeofview.shapes.RoundRectView
+    android:id="@+id/add_image_rect_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:shape_roundRect_bottomLeftRadius="10dp"
+    app:shape_roundRect_bottomRightRadius="10dp"
+    app:shape_roundRect_topLeftRadius="10dp"
+    app:shape_roundRect_topRightRadius="10dp"
+    app:shape_roundRect_borderWidth="1dp"
+    app:shape_roundRect_borderColor="@color/color_dddddd">
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/i_plus"/>
+    </RelativeLayout>
+  </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_marginLeft="16dp"
+  android:layout_marginTop="8dp"
+  android:layout_marginRight="16dp"
+  android:layout_marginBottom="8dp">
+
+
+  <com.github.florent37.shapeofview.shapes.RoundRectView
+    android:id="@+id/bubble_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginLeft="10dp"
+    app:shape_roundRect_bottomLeftRadius="15dp"
+    app:shape_roundRect_bottomRightRadius="15dp"
+    app:shape_roundRect_topLeftRadius="15dp"
+    app:shape_roundRect_topRightRadius="15dp">
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@color/colorPrimary"
+      android:padding="15dp">
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:id="@id/messageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="230dp"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        android:textColor="@color/color_ffffff" />
+
+    </LinearLayout>
+
+
+  </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:id="@id/messageTime"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@id/bubble_view"
+    android:layout_toLeftOf="@id/bubble_view"
+    android:text="10:10" />
+
+
+</RelativeLayout>

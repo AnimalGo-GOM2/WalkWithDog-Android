@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <include layout="@layout/toolbar_close" />
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="20dp"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="*"
+      android:textColor="@color/colorAccent"
+      android:textSize="12dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="3dp"
+      android:text="회원을 차단할 시 해당 회원의 산책친구 요청을 볼 수 없게 됩니다."
+      android:textColor="@color/color_000000"
+      android:textSize="12dp" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginRight="20dp"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="*"
+      android:textColor="@color/colorAccent"
+      android:textSize="12dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="3dp"
+      android:text="마이페이지에서 차단 취소할 수 있습니다."
+      android:textColor="@color/color_000000"
+      android:textSize="12dp" />
+  </LinearLayout>
+
+    <com.skydoves.powerspinner.PowerSpinnerView
+      android:id="@+id/blocking_spinner"
+      android:layout_width="match_parent"
+      android:layout_height="51dp"
+      android:background="@color/color_ffffff"
+      android:gravity="center_vertical"
+      android:hint="차단 사유를 선택하세요."
+      android:layout_marginTop="30dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginLeft="20dp"
+      android:padding="15dp"
+      android:textColor="@color/color_000000"
+      android:textColorHint="@color/color_999999"
+      android:textSize="14dp"
+      app:spinner_arrow_gravity="end"
+      app:spinner_arrow_drawable="@drawable/arrow_down"
+      app:spinner_divider_color="@color/color_000000"
+      app:spinner_divider_show="true"
+      app:spinner_divider_size="0.4dp"
+      app:spinner_item_array="@array/blocking"
+      app:spinner_popup_animation="dropdown"
+      app:spinner_popup_background="@color/color_ffffff"
+      app:spinner_popup_elevation="14dp" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="#EAE8E5" />
+
+    <LinearLayout
+      android:id="@+id/blocking_content"
+      android:layout_width="match_parent"
+      android:layout_height="190dp"
+      android:visibility="gone"
+      android:orientation="vertical"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginTop="30dp">
+
+      <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내용"
+        android:textColor="@color/color_000000"
+        android:textSize="14dp"/>
+
+      <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/blocking_content_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/clear"
+        android:hint="차단 사유를 입력 해주세요."
+        android:gravity="top"
+        android:textSize="14dp"/>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_CCCCCC"/>
+    </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="20dp"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="사진"
+      android:textColor="@color/color_000000"
+      android:textSize="14dp" />
+
+    <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical">
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+          android:id="@+id/image_cnt_text_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="0/5"
+          android:textColor="@color/color_999999"
+          android:textSize="12dp" />
+      </LinearLayout>
+    </RelativeLayout>
+
+  </LinearLayout>
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/blocking_recycler_view"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"/>
+
+  </LinearLayout>
+
+  <com.github.florent37.shapeofview.shapes.RoundRectView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="20dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_marginBottom="30dp"
+    app:shape_roundRect_bottomLeftRadius="10dp"
+    app:shape_roundRect_bottomRightRadius="10dp"
+    app:shape_roundRect_topLeftRadius="10dp"
+    app:shape_roundRect_topRightRadius="10dp">
+
+    <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/blocking_button"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="#28E0AB"
+      android:gravity="center"
+      android:text="확인"
+      android:textColor="@color/color_ffffff"
+      android:textSize="16dp"
+      android:textStyle="bold" />
+
+  </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

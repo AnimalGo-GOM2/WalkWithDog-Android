@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <include layout="@layout/toolbar_back" />
+
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp">
+
+    <RelativeLayout
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:layout_centerHorizontal="true">
+
+      <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:shape_roundRect_bottomLeftRadius="75dp"
+        app:shape_roundRect_bottomRightRadius="75dp"
+        app:shape_roundRect_topLeftRadius="75dp"
+        app:shape_roundRect_topRightRadius="75dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+          android:id="@+id/user_image_view"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:src="@drawable/default_profile" />
+
+
+      </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+      <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/camera_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/btn_camera" />
+
+
+    </RelativeLayout>
+  </RelativeLayout>
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginRight="20dp"
+    android:text="낙네임"
+    android:textColor="@color/color_000000"
+    android:textSize="14dp" />
+
+  <androidx.appcompat.widget.AppCompatEditText
+    android:id="@+id/member_nickname_edit_text"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="11dp"
+    android:layout_marginRight="20dp"
+    android:background="@color/clear"
+    android:textSize="14dp" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="#EAE8E5" />
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="45dp"
+    android:layout_marginRight="20dp"
+    android:orientation="horizontal">
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/gender_text_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="남"
+      android:textColor="@color/color_999999"
+      android:textSize="14dp" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text=" · "
+      android:textColor="@color/color_999999"
+      android:textSize="14dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="20대"
+      android:id="@+id/age_text_view"
+      android:textColor="@color/color_999999"
+      android:textSize="14dp" />
+  </LinearLayout>
+
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="20dp"
+    android:text="* 성별과 나이대는 수정할 수 없습니다."
+    android:textColor="@color/color_999999"
+    android:textSize="14dp" />
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="30dp">
+
+    <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+      <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/send_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        app:shape_roundRect_bottomLeftRadius="10dp"
+        app:shape_roundRect_bottomRightRadius="10dp"
+        app:shape_roundRect_topLeftRadius="10dp"
+        app:shape_roundRect_topRightRadius="10dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/complete_button"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:background="#28E0AB"
+          android:gravity="center"
+          android:text="완료"
+          android:textColor="@color/color_ffffff"
+          android:textSize="16dp"
+          android:textStyle="bold" />
+
+      </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+    </RelativeLayout>
+  </LinearLayout>
+
+
+</LinearLayout>
